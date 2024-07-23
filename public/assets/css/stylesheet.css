@@ -1,3 +1,13 @@
-
+/* This is scss variables . */
+body {
+  margin: 10px;
+  background-color: #F7F8FC;
+}
+body ul img {
+  object-fit: cover;
+  border-color: whitesmoke;
+  background-color: aqua;
+  border-radius: 70%;
+}
 
 /*# sourceMappingURL=stylesheet.css.map */
