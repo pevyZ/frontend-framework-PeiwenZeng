@@ -2,6 +2,7 @@
 
 $bg-colour:#F7F8FC;
 $blue-colour:#3751FF;
+$sidebar-coulour:#343a40d0;
 
 
 
@@ -10,30 +11,58 @@ body{
     margin: 10px;
     background-color: $bg-colour;
 
-    ul{
-        // #burgerlogo{
-        //     background-color: $blue-colour;
-        //     color: #F7F8FC;
-        //     border-radius: 60%;
-        // }
-        // #headertext{
-
-        //     font-size: 20px;
-        //     font-weight: 300;
-        //     display: flex;
-        //     align-items: center;
-        // }
-
+    header{
+        .nav{
+            margin-bottom: 20px;
+        }
         img{
             object-fit: cover;
-            border-color: whitesmoke;
             background-color: aqua;
             border-radius: 70%;
         }
     }
+
+    // This is sidebar style
+
+    .sidebar {
+        width: 20%; 
+        height: 100vh;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        background-color: $sidebar-coulour;
+        padding-top: 20px;
+        overflow-y: auto;
+
+        display: none;
+
+        .nav-item{
+            margin-bottom: 15px;
+        }
+        .line-item{
+            height: 1px;
+            background-color: #DFE0EB;
+            display: block;
+        }
+    }
+
+
+    // This is main content
+
 }
 
 
-// @media (min-width: 992px) {
+@media (min-width: 992px) {
+    #burgermenu{
+        display: none;
+    }
+    
+    .sidebar{
+        display: block !important;
+    }
 
-// }
+    #main-container{
+        margin-left: 20%;
+        margin-top: 40px;
+    }
+}

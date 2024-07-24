@@ -3,11 +3,45 @@ body {
   margin: 10px;
   background-color: #F7F8FC;
 }
-body ul img {
+body header .nav {
+  margin-bottom: 20px;
+}
+body header img {
   object-fit: cover;
-  border-color: whitesmoke;
   background-color: aqua;
   border-radius: 70%;
+}
+body .sidebar {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 58, 64, 0.8156862745);
+  padding-top: 20px;
+  overflow-y: auto;
+  display: none;
+}
+body .sidebar .nav-item {
+  margin-bottom: 15px;
+}
+body .sidebar .line-item {
+  height: 1px;
+  background-color: #DFE0EB;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  #burgermenu {
+    display: none;
+  }
+  .sidebar {
+    display: block !important;
+  }
+  #main-container {
+    margin-left: 20%;
+    margin-top: 40px;
+  }
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
