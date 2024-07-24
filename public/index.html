@@ -9,16 +9,81 @@
     <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
 <body class="container">
-    <header class="navbar bg-body-tertiary">
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand">Navbar</a>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
+    <header>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <button id="burgermenu" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+          </button>
+          <!-- content for burgermenu-->
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Dashboard</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-        </nav>
+            <div class="offcanvas-body">
+              <nav class="navbar bg-body-tertiary">
+                  <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Overview</span>
+                </div>
+              </nav>
+              <nav class="navbar bg-body-tertiary">
+                  <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Tickets</span>
+                  </div>
+              </nav>
+              <nav class="navbar bg-body-tertiary">
+                  <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Ideas</span>
+                  </div>
+              </nav>
+              <nav class="navbar bg-body-tertiary">
+                  <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Contacts</span>
+                  </div>
+              </nav>
+              <nav class="navbar bg-body-tertiary">
+                  <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Agents</span>
+                  </div>
+              </nav>
+              <nav class="navbar bg-body-tertiary">
+                  <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Articles</span>
+                  </div>
+              </nav>
+              <nav class="navbar bg-body-tertiary">
+                  <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Settings</span>
+                  </div>
+              </nav>
+              <nav class="navbar bg-body-tertiary">
+                  <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Subscription</span>
+                  </div>
+              </nav>
+            </div>
+          </div>
+          </a>
+          <a class="navbar-brand">Review</a>
+          <a href="#" class="d-flex ms-auto me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+          </a>
+          <a href="#" class="d-flex me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+              <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+            </svg>
+          </a>
+          <a href="#" class="d-flex">        
+            <img src="assets/images/Keeley.png" alt="Profile Picture" class="rounded-circle" width="40" height="40">
+          </a>
+        </div>
+      </nav>
     </header>
     
     <div class="d-flex">
@@ -79,41 +144,32 @@
                 </li>
             </ul>
         </nav> 
-
+         <!-- This is the card -->
         <main id="main-container" class="container text-center">
-            <div class="row">
-                <div class="col-sm-3 mb-3 mb-sm-0">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                  </div>
+            <div class="row gap-3 d-flex justify-content-center">
+              <div class="card col-md-6 text-center mb-3" style="width: 13rem;">
+                <div class="card-body">
+                  <p class="card-text fs-5">Unresolved</p>
+                  <h5 class="card-title fs-2">60</h5> 
                 </div>
-                <div class="col-sm-3 mb-3 mb-sm-0">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                  </div>
+              </div>
+              <div class="card col-md-6 text-center mb-3" style="width: 13rem;">
+                <div class="card-body">
+                  <p class="card-text fs-5">Overdue</p>
+                  <h5 class="card-title fs-2">16</h5> 
                 </div>
-                <div class="col-sm-3 mb-3 mb-sm-0">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-3 mb-3 mb-sm-0">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </div>
-                  </div>
+              </div>
+              <div class="card col-md-6 text-center mb-3" style="width: 13rem;">
+                <div class="card-body">
+                  <p class="card-text fs-5">Open</p>
+                  <h5 class="card-title fs-2">43</h5> 
+                </div>
+              </div>
+              <div class="card col-md-6 text-center mb-3" style="width: 13rem;">
+                <div class="card-body">
+                  <p class="card-text fs-5">On hold</p>
+                  <h5 class="card-title fs-2">64</h5> 
+                </div>
             </div>
         </main>
     
