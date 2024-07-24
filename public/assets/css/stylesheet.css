@@ -46,6 +46,20 @@ body #main-container .card-body .card-text {
 body #main-container .img {
   object-fit: contain;
 }
+body #main-container .fs-6 {
+  opacity: 0.6;
+  font-size: 11px !important;
+}
+body #main-container .fw-lighter {
+  font-size: 14px;
+}
+body #main-container .rounded-pill {
+  margin-top: 5px;
+}
+body #main-container #text-opacity p {
+  opacity: 0.5 !important;
+  margin-top: 5px;
+}
 
 @media (min-width: 992px) {
   #burgermenu {

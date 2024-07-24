@@ -66,6 +66,24 @@ body{
         .img{
             object-fit: contain;
         }
+
+        .fs-6{
+            opacity: 0.6;
+            font-size: 11px !important;
+        }
+        .fw-lighter{
+            font-size: 14px
+        }
+        .rounded-pill{
+            margin-top: 5px;
+        }
+        #text-opacity{
+            p{
+                opacity: 0.5 !important;
+                margin-top: 5px;
+            }       
+        }
+
     }
 }
 
