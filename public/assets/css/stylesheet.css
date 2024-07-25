@@ -71,6 +71,9 @@ body #main-container #text-opacity p {
 }
 
 @media (min-width: 992px) {
+  header {
+    margin-left: 25%;
+  }
   #burgermenu {
     display: none;
   }

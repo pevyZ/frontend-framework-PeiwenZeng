@@ -98,6 +98,11 @@ body{
 
 
 @media (min-width: 992px) {
+
+    header{
+        margin-left: 25%;
+
+    }
     #burgermenu{
         display: none;
     }
@@ -105,7 +110,7 @@ body{
     .sidebar{
         display: block !important;
     }
-
+    
     #main-container{
         margin-left: 20%;
         margin-top: 20px;
