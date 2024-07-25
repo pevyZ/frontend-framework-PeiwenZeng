@@ -1,5 +1,7 @@
 /* This is scss variables . */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 body {
+  font-family: "Montserrat", sans-serif;
   margin: 15px;
   background-color: #F7F8FC;
 }
@@ -10,6 +12,12 @@ body header img {
   object-fit: cover;
   background-color: aqua;
   border-radius: 70%;
+}
+body header .text-reset {
+  text-decoration: none;
+}
+body header .offcanvas {
+  background-color: #F7F8FC;
 }
 body .sidebar {
   width: 20%;
@@ -45,12 +53,13 @@ body #main-container .card-body .card-text {
 }
 body #main-container .img {
   object-fit: contain;
+  height: 100%;
 }
 body #main-container .fs-6 {
   opacity: 0.6;
   font-size: 11px !important;
 }
-body #main-container .fw-lighter {
+body #main-container .fw-light {
   font-size: 14px;
 }
 body #main-container .rounded-pill {

@@ -4,10 +4,12 @@ $bg-colour:#F7F8FC;
 $blue-colour:#3751FF;
 $sidebar-coulour:#343a40d0;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 
 body{
+    font-family: "Montserrat", sans-serif;
     margin: 15px;
     background-color: $bg-colour;
 
@@ -19,6 +21,12 @@ body{
             object-fit: cover;
             background-color: aqua;
             border-radius: 70%;
+        }
+        .text-reset{
+            text-decoration: none;
+        }
+        .offcanvas{
+            background-color: $bg-colour;
         }
     }
 
@@ -65,13 +73,14 @@ body{
 
         .img{
             object-fit: contain;
+            height: 100%;
         }
 
         .fs-6{
             opacity: 0.6;
             font-size: 11px !important;
         }
-        .fw-lighter{
+        .fw-light{
             font-size: 14px
         }
         .rounded-pill{

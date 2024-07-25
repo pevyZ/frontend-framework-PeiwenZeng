@@ -11,7 +11,7 @@
 <body class="container">
     <header>
       <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand">
             <button id="burgermenu" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -21,7 +21,10 @@
           <!-- content for burgermenu-->
           <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Dashboard</h5>
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                <img src="assets/images/company logo.png" alt="company Logo" width="50" height="50" class="logo d-inline-block align-text-center">
+                        Dashboard Kit
+              </h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -78,6 +81,9 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
               <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
             </svg>
+          </a>
+          <a href="#" class="d-flex me-3 text-reset">
+            Jones Ferdinand
           </a>
           <a href="#" class="d-flex">        
             <img src="assets/images/Keeley.png" alt="Profile Picture" class="rounded-circle" width="40" height="40">
@@ -144,7 +150,6 @@
                 </li>
             </ul>
         </nav> 
-
          
         <main id="main-container" class="container text-center">
             <!-- This is the card -->
@@ -175,10 +180,10 @@
             </div>
 
             <!-- Chart and list -->
-            <div class="row g-0 mt-3 justify-content-center">
+            <div class="row g-0 mt-3 justify-content-center align-items-stretch">
               <!-- chart -->
-              <div class="col-lg-7 col-md-12">
-                <a href="" class="d-block mx-auto" style="max-width: 100%;">
+              <div class="col-lg-7 col-md-12 d-flex">
+                <a href="" class="d-block mx-auto w-100" >
                     <img src="assets/images/chart.png" class="rounded img-fluid" alt="chart for today's trend">
                 </a>
              </div>
@@ -224,19 +229,19 @@
                   </li>
                   <ul class="list-group">
   
-                    <li class="fw-lighter list-group-item d-flex justify-content-between align-items-center">
+                    <li class="fw-light list-group-item d-flex justify-content-between align-items-center">
                       Waiitng on Feature Request
                       <span>4238</span>
                     </li>
-                    <li class="fw-lighter list-group-item d-flex justify-content-between align-items-center">
+                    <li class="fw-light list-group-item d-flex justify-content-between align-items-center">
                       Awaiting Customer Response
                       <span>1005</span>
                     </li>
-                    <li class="fw-lighter list-group-item d-flex justify-content-between align-items-center">
+                    <li class="fw-light list-group-item d-flex justify-content-between align-items-center">
                       Awaiting Developer Fix
                       <span>914</span>
                     </li>
-                    <li class="fw-lighter list-group-item d-flex justify-content-between align-items-center">
+                    <li class="fw-light list-group-item d-flex justify-content-between align-items-center">
                       Pending
                       <span>281</span>
                     </li>
@@ -256,21 +261,21 @@
                   </li>
   
                   <ul class="list-group">
-                    <li style="height: 38px;" id="text-opacity" class="fw-lighter list-group-item d-flex justify-content-between align-items-center">
+                    <li style="height: 38px;" id="text-opacity" class="fw-light list-group-item d-flex justify-content-between align-items-center">
                       Create new task
                       <span class="badge rounded-pill text-bg-secondary">+</span>
                     </li>
-                    <li style="height: 38px;" class="fw-lighter list-group-item d-flex justify-content-between align-items-center">
+                    <li style="height: 38px;" class="fw-light list-group-item d-flex justify-content-between align-items-center">
                         <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
                         <label class="me-auto text-start form-check-label stretched-link" for="firstCheckboxStretched">Awaiting Customer Response</label>
                         <span class="badge rounded-pill text-bg-warning">urgent</span>
                     </li>
-                    <li class="fw-lighter list-group-item d-flex justify-content-between align-items-center">
+                    <li class="fw-light list-group-item d-flex justify-content-between align-items-center">
                       <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
                         <label class="me-auto text-start form-check-label stretched-link" for="firstCheckboxStretched">Create new ticket example</label>
                       <span class="badge rounded-pill text-bg-success">new</span>
                     </li>
-                    <li class="fw-lighter list-group-item d-flex justify-content-between align-items-center">
+                    <li class="fw-light list-group-item d-flex justify-content-between align-items-center">
                       <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
                         <label class="me-auto text-start form-check-label stretched-link" for="firstCheckboxStretched">Update ticket report</label>
                       <span class="badge rounded-pill text-bg-light">Defaut</span>
@@ -283,7 +288,6 @@
     
     </div>
 
-    <!-- This is MAIN content -->
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
