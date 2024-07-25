@@ -3,6 +3,7 @@
 $bg-colour:#F7F8FC;
 $blue-colour:#3751FF;
 $sidebar-coulour:#343a40d0;
+$tran-colour:#626fc9;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -96,11 +97,27 @@ body{
     }
 }
 
+// Transition
+.nav-item:hover {
+    border: 2px solid $tran-colour; 
+    transition: border-color 0.3s ease; 
+}
+
+.card:hover {
+    border: 2px solid $tran-colour;
+    transition: border-color 0.3s ease; 
+}
+.fw-light:hover {
+    border: 2px solid $tran-colour; 
+    transition: border-color 0.3s ease; 
+} 
+
+
 
 @media (min-width: 992px) {
 
     header{
-        margin-left: 25%;
+        margin-left: 20%;
 
     }
     #burgermenu{
